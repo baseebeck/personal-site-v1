@@ -6,7 +6,12 @@
   <title>Ben Seebeck</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/67b4a9aeb2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -55,7 +60,7 @@
   </section>
 
 
-<section class="projectSection">
+<section id="portfolio" class="projectSection">
 
     <div class="projectTopContainer">
       <h2 class="projectPgTitle">Project Portfolio</h2>
@@ -102,7 +107,7 @@
         </div>
       </div>
       <!-- CARD 4 -->
-      <div class="flipCard">
+      <div class="flipCard hidden hiddenCard">
         <div class="flipCardInner">
           <div class="flipCardFront">
             <h3 class="projectTitle">Business Website</h3>
@@ -115,7 +120,7 @@
         </div>
       </div>
       <!-- CARD 5 -->
-      <div class="flipCard">
+      <div class="flipCard hidden hiddenCard">
         <div class="flipCardInner">
           <div class="flipCardFront">
             <h3 class="projectTitle">Interactive Clock</h3>
@@ -128,7 +133,7 @@
         </div>
       </div>
       <!-- CARD 6 -->
-      <div class="flipCard">
+      <div class="flipCard hidden hiddenCard">
         <div class="flipCardInner">
           <div class="flipCardFront">
             <h3 class="projectTitle">CSS Noodle Grid</h3>
@@ -141,7 +146,7 @@
         </div>
       </div>
       <!-- CARD 7 -->
-      <div class="flipCard">
+      <div class="flipCard hidden hiddenCard">
         <div class="flipCardInner">
           <div class="flipCardFront">
             <h3 class="projectTitle">Drum Kit</h3>
@@ -154,7 +159,7 @@
         </div>
       </div>
       <!-- CARD 8 -->
-      <div class="flipCard">
+      <div class="flipCard hidden hiddenCard">
         <div class="flipCardInner">
           <div class="flipCardFront">
             <h3 class="projectTitle">Simon Game</h3>
@@ -167,7 +172,7 @@
         </div>
       </div>
       <!-- CARD 9 -->
-      <div class="flipCard">
+      <div class="flipCard hidden hiddenCard">
         <div class="flipCardInner">
           <div class="flipCardFront">
             <h3 class="projectTitle">Parallax Effect</h3>
@@ -181,7 +186,12 @@
       </div>
     </div>
 <div class="projectBottomContainer">
-  <!-- <a class="projectPgBtn" href="projects.html">MORE PROJECTS</a> -->
+    <div class="portfolioExpand">
+      <div class="upArrow hidden"><i class="hidden fas fa-chevron-up fa-2x"></i></div>
+      <p id="expandText">MORE PROJECTS</p>
+      <div class="downArrow"><i class="fas fa-chevron-down fa-2x downArrow"></i></div>
+
+    </div>
 </div>
 
   </section>
@@ -202,6 +212,7 @@
     <p class="copyright">© 2020 Ben Seebeck</p>
   </section>
 
+<script src="index.js" charset="utf-8"></script>
 </body>
 
 </html>

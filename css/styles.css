@@ -37,7 +37,6 @@ p {
 
 a {
   color: #643579;
-  font-family: 'Montserrat', sans-serif;
   margin: 10px 20px;
   text-decoration: none;
 }
@@ -163,11 +162,6 @@ a:hover {
   justify-content: center;
 }
 
-.projectBottomContainer {
-  padding: 0 0 60px 0;
-  width: 100%;
-}
-
 .projectPgTitle {
   color: #fff;
   /* margin-top: 75px; */
@@ -259,24 +253,39 @@ a:hover {
   text-decoration: none;
 }
 
-.projectPgBtn {
-  background-color: #f5edf7;
-  border: solid #A486B3 1px;
-  border-radius: 12px;
-  color: #643579;
-  cursor: pointer;
-  font-size: 1.2rem;
-  margin-top: 40px;
-  padding: 15px 25px 15px 25px;
-  text-align: center;
-  text-decoration: none;
+.projectBottomContainer {
+  padding: 0 0 60px 0;
+  width: 100%;
 }
 
-.projectPgBtn:hover {
-  border: solid #8C739A 1px;
-  background: #643579;
+.portfolioExpand {
+  color: #f5edf7;
+  display: block;
+  font-size: 1.3rem;
+  padding: 10px;
+  margin: 0 auto;
   text-decoration: none;
+  width: 200px;
 }
+
+.portfolioExpand:hover {
+  color: #643579;
+  cursor: pointer;
+}
+
+.portfolioExpand p {
+  line-height: 0;
+}
+
+.downArrow {
+  margin-top: 10px;
+}
+
+.upArrow {
+  margin-bottom: 30px;
+}
+
+
 
 /* END OF PROJECT SECTION */
 
@@ -313,4 +322,8 @@ a:hover {
 
 .textLink:hover {
   color: #bb99cd;
+}
+
+.hidden {
+  display: none;
 }

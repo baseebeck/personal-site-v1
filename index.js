@@ -1,3 +1,4 @@
+// PORTFOLIO EXPAND
 function expand() {
   let hiddenCards = document.querySelector(".hiddenCards");
   let expandText = document.querySelector("#expandText");
@@ -28,6 +29,11 @@ document.querySelector(".portfolioExpand").onclick = function() {
 }
 
 
+
+
+
+
+// EXPAND/CONTRACT REVEAL SMOOTH ANIMATION
 
 // function hiddenCards() {
 //     let hiddenCards = document.querySelector('.hiddenCards');

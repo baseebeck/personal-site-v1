@@ -84,7 +84,7 @@ a:hover {
 }
 
 .intro {
-  width: 40%;
+  width: 50%;
   margin: auto;
 }
 
@@ -150,40 +150,57 @@ a:hover {
 }
 
 .projectTopContainer {
-  padding: 5px 0 5px 0;
+  padding: 5px 0;
   width: 100%;
-}
-
-.projectMiddleContainer {
-  background-color: #bb99cd;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 50px 60px;
-  justify-content: center;
 }
 
 .projectPgTitle {
   color: #fff;
-  /* margin-top: 75px; */
 }
 
-.projectTitle {
-  font-size: 1.6rem;
-  margin-top: 50px;
+.projectMiddleContainer {
+  padding: 0 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid black; */
 }
 
-.projectTextFront {
-  font-size: 1.1rem;
-  line-height: 2;
-  margin: 25px 50px 0;
-  text-align: center;
+.visibleCards {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  /* border: 1px solid black; */
 }
 
-.projectTextBack {
-  font-size: 1rem;
-  line-height: 2;
-  margin: 35px;
-  text-align: center;
+.hiddenCards {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+
+@media only screen and (min-width: 981px) {
+  .visibleCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    border: none;
+  }
+
+  .hiddenCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    border: none;
+  }
 }
 
 .flipCard {
@@ -192,7 +209,8 @@ a:hover {
   width: 300px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
-  margin: 20px;
+  margin: 1.5rem;
+  position: relative;
 }
 
 .flipCardInner {
@@ -227,6 +245,25 @@ a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.1);
   color: #fff;
   transform: rotateY(180deg);
+}
+
+.projectTitle {
+  font-size: 1.6rem;
+  margin-top: 50px;
+}
+
+.projectTextFront {
+  font-size: 1.1rem;
+  line-height: 2;
+  margin: 25px 50px 0;
+  text-align: center;
+}
+
+.projectTextBack {
+  font-size: 1rem;
+  line-height: 2;
+  margin: 35px;
+  text-align: center;
 }
 
 .projectBtn {
@@ -327,3 +364,31 @@ a:hover {
 .hidden {
   display: none;
 }
+
+/* .hiddenCards {
+    -moz-transition: height 1s;
+    -ms-transition: height 1s;
+    -o-transition: height 1s;
+    -webkit-transition: height 1s;
+    transition: height 1s;
+    height: 0;
+    overflow: hidden;
+  }
+
+  #more-button {
+    background: transparent;
+    border: none;
+    color: #f5edf7;
+    cursor: pointer;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    padding: 10px;
+    margin: 0 auto;
+    text-decoration: none;
+    width: 200px;
+  }
+
+  #more-button:hover {
+    color: #643579;
+  } */

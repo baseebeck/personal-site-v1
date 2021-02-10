@@ -1,4 +1,5 @@
 # personal-site
+V1: https://baseebeck.github.io/personal-site/
 
 This started as a project I did for a Web Development Course on Udemy using HTML and CSS.
 
